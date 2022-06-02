@@ -1,5 +1,4 @@
 // Require style direct in Pug
-//import '../../style.css';
 
 const hello = document.createElement('h1');
 const wrapper = document.createElement('div');

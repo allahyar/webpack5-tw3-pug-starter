@@ -12,6 +12,7 @@ PAGES.map((page) => {
   entries[page] = path.resolve(__dirname, `src/pages/${page}/${page}.pug`)
 });
 
+
 const config = {
   // You can define Pug files directly in entry.
   // The pug-plugin enable to use script and style source files directly in Pug.
@@ -26,6 +27,7 @@ const config = {
   },
   // Spin up a server for quick development
   plugins: [
+
     // enable processing of Pug files from entry
     new PugPlugin({
       pretty: true, // formatting HTML
