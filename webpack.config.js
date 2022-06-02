@@ -2,12 +2,9 @@ const path = require('path');
 const PugPlugin = require('pug-plugin');
 
 const buildPath = 'dist';
-const PAGES = [
-  'index',
-  'test'
-];
-const entries = {};
+const PAGES = ['index','test'];
 
+const entries = {};
 PAGES.map((page) => {
   entries[page] = path.resolve(__dirname, `src/pages/${page}/${page}.pug`)
 });
