@@ -1,6 +1,9 @@
 module.exports = {
   content: ["./src/**/*.{pug,js}"],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {},
   },
   plugins: [

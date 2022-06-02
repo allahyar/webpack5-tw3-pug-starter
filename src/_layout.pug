@@ -8,8 +8,9 @@ html(lang="en")
       //- use common styles global
       link(href=require('./tailwind.css') rel='stylesheet')
   body
-    h1 Pug - node template engine
-    block content
+    .container
+      h1.text-4xl.font-bold.my-8 Pug - node template engine
+      block content
 
     //- block for page scripts added in a page Pug file, must be always at last position
     block script
