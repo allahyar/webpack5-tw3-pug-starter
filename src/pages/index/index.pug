@@ -1,4 +1,15 @@
 extends ../../layout
 
+block variables
+    //- define variables used in layout
+    - pageTitle = 'Start site'
+
+append style
+    //- add page styles
+    link(href=require('./index.css') rel='stylesheet')
+append script
+    //- add page scripts
+    script(src=require('./index.js'))
+
 block content
     h2.text-3xl.font-bold Hello World!
