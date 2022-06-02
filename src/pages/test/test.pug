@@ -1,4 +1,15 @@
 extends ../../layout
 
+block variables
+    //- define variables used in layout
+    - pageTitle = 'Test site'
+
+append style
+    //- add page styles
+    link(href=require('./test.css') rel='stylesheet')
+append script
+    //- add page scripts
+    script(src=require('./test.js'))
+
 block content
     h2.text-3xl.bg-black test
