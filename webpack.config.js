@@ -26,17 +26,6 @@ const config = {
   },
   // Spin up a server for quick development
   plugins: [
-    // Note: PugPlugin extract images from Pug, fonts from SCSS and copy them in output publicPath directory.
-    // Usage images in Pug: img(src=require('source/path/to/image.png'))
-    // Usage font in SCSS: 
-    // @font-face {
-    //   src: url('source/path/to/font.woff2'); 
-    // }
-    // You don't need copy resources.
-    // new CopyPlugin({
-    //   patterns: [{ from: './src/fonts', to: 'fonts' }]
-    // }),
-
     // enable processing of Pug files from entry
     new PugPlugin({
       pretty: true, // formatting HTML
