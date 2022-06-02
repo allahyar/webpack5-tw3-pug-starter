@@ -15,4 +15,5 @@ block content
     .container
         h2.text-3xl.font-bold.mt-3.mb-6 Latest Article
         .grid.grid-cols-12.gap-10
-            include ../../components/_postItem
+            each val in [1, 2, 3]
+                include ../../components/_postItem
