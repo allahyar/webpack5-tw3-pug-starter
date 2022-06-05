@@ -4,7 +4,8 @@ Webpack 5 configuration for Single or Multipage websites using Pug, Tailwind CSS
 ## Installation
 
 - Run `npm install`
-- Run `npm start`
+- Run `npm dev`
+- for build `npm build`
 
 ### Dependencies
 
