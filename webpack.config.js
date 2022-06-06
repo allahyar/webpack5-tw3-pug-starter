@@ -72,6 +72,13 @@ const config = {
       },
     },
   },
+
+  resolve: {
+    extensions: ['.png', '.jpg'],
+    alias: {
+      '@assets': path.resolve(__dirname, 'src/assets'),
+    }
+  }
 };
 
 module.exports = (env, argv) => {
