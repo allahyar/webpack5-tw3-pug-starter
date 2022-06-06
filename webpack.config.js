@@ -36,6 +36,18 @@ const config = {
       ],
     }),
   ],
+
+  resolve: {
+    alias: {
+      // Views: path.join(__dirname, 'src/views/'),
+      Images: path.join(__dirname, 'src/assets/images/'),
+      // Fonts: path.join(__dirname, 'src/assets/fonts/'),
+      // Styles: path.join(__dirname, 'src/assets/styles/'),
+      // Scripts: path.join(__dirname, 'src/assets/scripts/'),
+    },
+    extensions: ['png', '.js', '.jsx']
+  },
+  
   module: {
     rules: [
       {
@@ -73,12 +85,7 @@ const config = {
     },
   },
 
-  resolve: {
-    extensions: ['.png', '.jpg'],
-    alias: {
-      '@assets': path.resolve(__dirname, 'src/assets'),
-    }
-  }
+
 };
 
 module.exports = (env, argv) => {
