@@ -44,8 +44,7 @@ const config = {
       // Fonts: path.join(__dirname, 'src/assets/fonts/'),
       // Styles: path.join(__dirname, 'src/assets/styles/'),
       // Scripts: path.join(__dirname, 'src/assets/scripts/'),
-    },
-    extensions: ['png', '.js', '.jsx']
+    }
   },
   
   module: {
