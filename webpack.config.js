@@ -66,7 +66,11 @@ const config = {
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-        type: 'asset',
+        type: 'asset/resource', // this is very important
+        // generator: {
+        //   // output filename of images
+        //   filename: 'assets/images/[name].[hash:8][ext]',
+        // },
       }
     ]
   },
