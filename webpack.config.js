@@ -2,7 +2,7 @@ const path = require('path');
 const PugPlugin = require('pug-plugin');
 
 const buildPath = 'dist';
-const PAGES = ['index','test'];
+const PAGES = ['index', 'test'];
 
 const entries = {};
 PAGES.map((page) => {
@@ -50,8 +50,8 @@ const config = {
         loader: 'babel-loader'
       },
       {
-        test: /\.css$/i,
-        use: ['css-loader', 'postcss-loader'],
+        test: /\.(css|sass|scss)$/,
+        use: ['css-loader', 'postcss-loader', 'sass-loader']
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,

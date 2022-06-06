@@ -1,0 +1,8 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.title {
+    font-size: 4rem;
+    @apply mb-8
+}
