@@ -60,13 +60,20 @@ const config = {
         use: ['css-loader', 'postcss-loader', 'sass-loader']
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+        test: /\.(png|jpg|jpeg|svg|ico)$/i,
         type: 'asset/resource', // this is very important
-        // generator: {
-        //   // output filename of images
-        //   filename: 'assets/images/[name].[hash:8][ext]',
-        // },
-      }
+        generator: {
+          // output filename of images
+          filename: 'assets/images/[name].[hash:8][ext]',
+        },
+      },
+      {
+        test: /\.(woff2|woff|ttf|svg|eot)/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/fonts/[name][ext]',
+        },
+      },
     ]
   },
   devServer: {
