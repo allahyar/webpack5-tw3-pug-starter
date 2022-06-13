@@ -34,11 +34,11 @@ const config = {
 
   resolve: {
     alias: {
-      // Views: path.join(__dirname, 'src/views/'),
-      Images: path.join(__dirname, 'src/assets/images/'),
-      // Fonts: path.join(__dirname, 'src/assets/fonts/'),
-      // Styles: path.join(__dirname, 'src/assets/styles/'),
-      // Scripts: path.join(__dirname, 'src/assets/scripts/'),
+      '@components': path.join(__dirname, 'src/views/'),
+      '@images': path.join(__dirname, 'src/assets/images/'),
+      '@fonts': path.join(__dirname, 'src/assets/fonts/'),
+      '@css': path.join(__dirname, 'src/assets/css/'),
+      '@js': path.join(__dirname, 'src/assets/js/'),
     }
   },
   
