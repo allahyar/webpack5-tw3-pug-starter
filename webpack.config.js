@@ -2,19 +2,14 @@ const path = require('path');
 const PugPlugin = require('pug-plugin');
 
 const buildPath = 'dist';
-const PAGES = ['index', 'test'];
-
-const entries = {};
-PAGES.map((page) => {
-  entries[page] = path.resolve(__dirname, `src/pages/${page}/${page}.pug`)
-});
-
 
 const config = {
   // You can define Pug files directly in entry.
   // The pug-plugin enable to use script and style source files directly in Pug.
   // Note: using PugPlugin the Entry Point is a Pug file, not a JS file.
-  entry: entries,
+  entry: {
+    index: './src/pages/index/index.pug'
+  },
   output: {
     path: path.join(__dirname, buildPath),
     publicPath: '/',
